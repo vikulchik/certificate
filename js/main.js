@@ -1,5 +1,4 @@
-$('.slider').bxSlider();
-$('.popup__slider').bxSlider();
+$('.slider, .popup__slider').bxSlider();
 
 
 var methodsSend = document.querySelector('.methods');

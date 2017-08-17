@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Certificate</title>
     <link rel="stylesheet" href="css/jquery.bxslider.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -67,7 +68,7 @@
                 <h2 class="steps__description">Шаг 2.</h2>
                 <h3 class="steps__text">Напишите поздравление</h3>
                 <form action="#" method="post" class="steps__form">
-                    <div class="steps__content">
+                    <div class="steps__content steps__content--data">
                         <div class="steps__block">
                             <label class="steps__label">От кого</label>
                             <input type="text" name="name" placeholder="Ваше имя" class="steps__input">
@@ -77,7 +78,7 @@
                             <input type="text" name="name" placeholder="Имя получателя" class="steps__input">
                         </div>
                     </div>
-                    <div class="steps__content">
+                    <div class="steps__content steps__content--message">
                         <div class="steps__block">
                             <label class="steps__label">Ваше сообщение</label>
                             <textarea placeholder="Напишите поздравление" class="steps__message"></textarea>
@@ -94,13 +95,16 @@
                         <h2 class="steps__description">Шаг 3.</h2>
                         <h3 class="steps__text">Выберите способ доставки и удобное время доставки</h3>
                         <div class="methods">
-                            <button class="methods__button methods__button--email">E-mail</button>
-                            <button class="methods__button methods__button--message">SMS</button>
-                            <button class="methods__button methods__button--print">Распечатать</button>
+                            <div class="methods__block">
+                                <button class="methods__button methods__button--email">E-mail</button>
+                                <button class="methods__button methods__button--message">SMS</button>
+                                <button class="methods__button methods__button--print">Распечатать</button>
+                            </div>
                             <button class="methods__button email-of-user">E-mail получателя</button>
                             <p class="methods__text">
                                 Получателю придет e-mail
                                 c поздравлением и секретным кодом
+                                <a href="#" class="clean-link">посмотреть пример</a>
                             </p>
                             <p class="send-present-now">
                                 Доставить подарок

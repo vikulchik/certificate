@@ -39,6 +39,7 @@ li {
 .wrapper {
     max-width: 1060px;
     margin: auto;
+    width: 90%;
 }
 
 .container .wrapper {
@@ -182,6 +183,7 @@ li {
 
 .steps__input,
 .steps__message {
+    font-size: 18px;
     width: 100%;
     border: none;
     border-radius: 3px;
@@ -192,7 +194,6 @@ li {
 .steps__message {
     resize: vertical;
     height: 190px;
-    font-size: 18px;
     font-family: ProximaNova, sans-serif;
     color: #2f2929;
 }
@@ -246,6 +247,7 @@ li {
     margin-top: 55px;
     color: #707070;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .methods__text {
@@ -650,6 +652,34 @@ li {
 
 }
 
+@media screen and (max-width: 768px){
+    .main-list,
+    .type-of-certificate {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .type-of-certificate__button {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .certificate,
+    .present-view {
+        display: none;
+    }
+
+    .delivery-method,
+    .methods__button {
+        width: 100%;
+    }
+
+}
+
 @media screen and (max-width: 500px) {
 
     .popup__slider-text {
@@ -681,14 +711,6 @@ li {
         width: 43%;
     }
 
-    .main-list,
-    .type-of-certificate {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
     .list-wrapper .clean-link {
         text-align: center;
         padding-right: 0;
@@ -711,18 +733,13 @@ li {
         padding: 0 25px;
     }
 
-    .type-of-certificate__button {
-        margin-bottom: 25px;
-    }
-
     .steps__form,
     .methods__text .clean-link {
         display: block;
     }
 
     .steps__content--data,
-    .steps__content--message,
-    .delivery-method {
+    .steps__content--message {
         width: 100%;
     }
 
@@ -736,8 +753,7 @@ li {
         margin-bottom: 0;
     }
 
-    .certificate,
-    .present-view {
+    .certificate {
         display: none;
     }
 
@@ -844,13 +860,31 @@ li {
     }
 }
 
-@media screen and  (max-width: 320px) {
+@media screen and (max-width: 470px){
+    .methods__button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
     .main-list,
     .type-of-certificate,
     .methods__block {
         display: block;
     }
 
+    .send-present-now {
+        position: relative;
+        right: auto;
+        top: auto;
+    }
+
+    .steps__content--data {
+        display: block;
+    }
+
+}
+
+@media screen and  (max-width: 320px) {
     .main-item,
     .methods__text {
         width: 100%;
@@ -871,22 +905,7 @@ li {
         font-size: 11px;
     }
 
-    .steps__content--data {
-        display: block;
-    }
-
     .steps__block {
-        margin-bottom: 20px;
-    }
-
-    .send-present-now {
-        position: relative;
-        right: auto;
-        top: auto;
-    }
-
-    .methods__button {
-        width: 100%;
         margin-bottom: 20px;
     }
 
